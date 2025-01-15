@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace EShop.Catalog.API.Controllers
 {
@@ -9,8 +8,8 @@ namespace EShop.Catalog.API.Controllers
     {
         public Task<IActionResult> GetProducts()
         {
-            var result = Ok(new { products = new[] { "A", "B", "C" } });
 
+            var result = Ok(new { products = new[] { "A", "B", "C" } });
             return Task.FromResult<IActionResult>(result);
         }
     }
